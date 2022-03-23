@@ -65,6 +65,7 @@ end
 
 function returnTOstrip()
     turtle.turnLeft()
+    turtle.turnLeft()
     for i = #savedMoves, 1, -1 do
         local value = savedMoves[i]
         if (value == "left") then
