@@ -108,16 +108,12 @@ function oreVein()
         mineForward()
         return true
     end
-    if blockDetectionDown then
-        mineDown()
-        recordMoves("down")
-    end
     return false
     
 end
 
 function Main()
-    
+    Tunnel(1)
 end
 
 Main()
