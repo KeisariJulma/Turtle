@@ -1,4 +1,29 @@
-while true do
-    event, username, message = os.pullEvent("chat") -- Will be fired when someone sends a chat message
-    print(username.. " just wrote: ".. message) -- Prints "*User* just wrote: *Message*"
-  end
+---@diagnostic disable: lowercase-global
+
+
+function blockDetection(has_block, data)
+    if has_block then
+        return data.name
+    else
+        return nil
+    end
+end
+
+
+function blockDetectionDown()
+    local has_block, data = turtle.inspectDown()
+    return blockDetection(has_block, data)
+end
+
+function blockDetectionForward()
+    local has_block, data = turtle.inspect()
+    return blockDetection(has_block, data)
+end
+
+function blockDetectionUp()
+    local has_block, data = turtle.inspectUp()
+    return blockDetection(has_block, data)
+end
+
+local box = peripheral.find("chatBox")
+box.sendMessage(blockDetectionForward()) -- Sends a message to the global chat
