@@ -26,4 +26,4 @@ function blockDetectionUp()
 end
 
 local box = peripheral.find("chatBox")
-box.sendMessageToPlayer("Hey you", "Nallukka000")
+box.sendMessageToPlayer("You like hentai?", "Nallukka000")
