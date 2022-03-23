@@ -3,6 +3,7 @@
         "turtle",
         "textutils",
         "found",
-        "sleep"
+        "sleep",
+        "gps"
     ]
 }
