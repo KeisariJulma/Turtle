@@ -111,6 +111,11 @@ function oreVein()
         mineForward()
         return true
     end
+    turtle.turnLeft()
+    if blockDetectionDown() then
+        recordMoves("down")
+        mineDown()
+    end
     return false
     
 end
