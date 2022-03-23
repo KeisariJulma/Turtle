@@ -70,7 +70,9 @@ function Tunnel(length)
             turtle.placeDown()
         end
         turtle.forward()
-        oreVein()
+        while oreVein() do
+            print("Block found")
+        end
     end
 end
 
