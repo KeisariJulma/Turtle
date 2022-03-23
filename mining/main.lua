@@ -33,13 +33,16 @@ function torch()
 end
 
 function findblocks()
+    local found = false
     if blockfront() then
+        found = true
         table.insert(savedMoves, "strait")
         orePatch()
         findblocks()
     end
     turtle.turnLeft()
     if blockfront() then
+        found = true
         table.insert(savedMoves, "left")
         table.insert(savedMoves, "strait")
         orePatch()
@@ -48,13 +51,16 @@ function findblocks()
     turtle.turnLeft()
     turtle.turnLeft()
     if blockfront() then
+        found = true
         table.insert(savedMoves, "right")
         table.insert(savedMoves, "strait")
         orePatch()
         findblocks()
     end
     turtle.turnLeft()
-    returnTOstrip()
+    if found then
+        returnTOstrip()
+    end
 end
 
 function returnTOstrip()

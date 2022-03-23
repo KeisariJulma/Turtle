@@ -1,5 +1,5 @@
 local url =
-"https://raw.githubusercontent.com/jacob-pro/turtle-mining/master/miner.lua"
+"https://raw.githubusercontent.com/KeisariJulma/Turtle/master/mining/main.lua"
 local response = http.get(url)
 if response then
     local r = response.readAll()
