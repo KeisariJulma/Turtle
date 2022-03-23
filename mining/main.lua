@@ -76,12 +76,12 @@ function returnTOstrip()
             turtle.forward()
         end
     end
+
+    savedMoves = nil
+    collectgarbage()
     turtle.forward()
     turtle.turnLeft()
     turtle.turnLeft()
-    for k in savedMoves (table) do
-        table [k] = nil
-    end
 end
 
 function orePatch()
