@@ -26,4 +26,4 @@ function blockDetectionUp()
 end
 
 local box = peripheral.find("chatBox")
-box.sendMessage(blockDetectionForward()) -- Sends a message to the global chat
+box.sendMessageToPlayer("Hey you", "Nallukka000")
