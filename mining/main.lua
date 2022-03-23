@@ -76,12 +76,11 @@ function returnTOstrip()
             turtle.forward()
         end
     end
-
-    savedMoves = nil
-    collectgarbage()
     turtle.forward()
     turtle.turnLeft()
     turtle.turnLeft()
+    savedMoves = nil
+    collectgarbage()
 end
 
 function orePatch()
