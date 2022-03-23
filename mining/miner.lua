@@ -71,6 +71,7 @@ function Tunnel(length)
         end
         turtle.forward()
         while oreVein() do
+            oreVein()
             print("Block found")
         end
     end
