@@ -26,6 +26,4 @@ function blockDetectionUp()
 end
 
 local box = peripheral.find("chatBox")
-local x, y, z = gps.locate(9, false)
-print(x)
-box.sendMessageToPlayer("X:"..x.." Y:"..y.." Z:", "KeisariJulma")
+box.sendMessageToPlayer("X: Y:y....z", "KeisariJulma")
