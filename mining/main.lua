@@ -19,7 +19,7 @@ local blocks = {
 }
 
 
-local savedMoves = {}
+ 
 
 function Main()
     forward(1)
