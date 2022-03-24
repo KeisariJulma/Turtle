@@ -27,4 +27,5 @@ end
 
 local box = peripheral.find("chatBox")
 local x, y, z = gps.locate(9, false)
-box.sendMessageToPlayer("X:"..x.." Y:"..y.." Z:"..z, "KeisariJulma")
+print(x)
+box.sendMessageToPlayer("X:"..x.." Y:"..y.." Z:", "KeisariJulma")
