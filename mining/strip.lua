@@ -12,4 +12,4 @@ function Main()
     print("alsop")
 end
 
-Main()
+Main(test)
