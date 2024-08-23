@@ -7,9 +7,7 @@ local slot = {
 
 
 
-function Main()
-    print(test)
+function Main(testTxt)
+    print(testTxt)
     print("alsop")
 end
-
-Main(test)
