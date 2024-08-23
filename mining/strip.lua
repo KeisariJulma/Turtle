@@ -21,3 +21,5 @@ function askForParameters()
 
     print(brach.length)
 end
+
+askForParameters()
