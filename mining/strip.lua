@@ -1,17 +1,23 @@
--- Example Lua script for CC: Tweaked
+local brach = {
+    amount,
+    lenght,
+    height,
+    spacing
+}
 
--- Function to ask for a parameter and return the value
-function askParameter(prompt)
-    -- Display the prompt to the user
-    print(prompt)
+
+
+function askForParameters()
+
+    print("brach Amount")
+    brach.amount = read()
+    print("brach lenght")
+    brach.length = read()
+    print("brach height")
+    brach.height = read()
+    print("brach sapacing")
+    brach.spacing  = read()
     
-    -- Read user input
-    local input = read()
-    
-    -- Return the input value
-    return input
+
+    print(brach.length)
 end
-
--- Example usage
-local paramName = askParameter("Please enter the name of the parameter:")
-print("You entered: " .. paramName)
